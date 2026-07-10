@@ -804,7 +804,7 @@ async function submitLead(lead){
         from_name: 'FrostBotUSA.com',
         replyto: lead['Email'],
         // CC everyone after the primary recipient (Web3Forms Pro feature; semicolon-separated)
-        ccemail: CONFIG.RECIPIENTS.slice(1).join(';'),
+        
         botcheck: '', // honeypot
         ...lead
       };
